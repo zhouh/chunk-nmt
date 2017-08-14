@@ -21,15 +21,14 @@ The main difference between our proposed model and dl4mt is that we use a bi-sca
 
     export THEANO_FLAGS=device=gpu2,floatX=float32
     datadir=/home/zhouh/Data/nmt
-    modeldir=../16
-    iter=398000
+    modeldir=./
     
     python ./translate_gpu.py -n -jointProb \
-    	$modeldir/model_hal.iter${iter}.npz  \
+    	$modeldir/model_hal.iter.npz  \
     	$modeldir/model_hal.npz.pkl  \
-    $datadir/hms.ch.filter.pkl \
+        $datadir/hms.ch.filter.pkl \
     	$datadir/hms.en.filter.chunked.pkl \
-    $datadir/devntest/MT0${i}/MT0${i}.src \
+        $datadir/devntest/MT0${i}/MT0${i}.src \
     	./test.result.chunk.${i} 
 
 
