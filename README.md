@@ -17,7 +17,7 @@ The main difference between our proposed model and dl4mt is that we use a bi-sca
     export THEANO_FLAGS=device=gpu2,floatX=float32
     python ./train_nmt_zh2en.py
 
-## Translating
+## Evaluation
 
     export THEANO_FLAGS=device=gpu2,floatX=float32
     datadir=/home/zhouh/Data/nmt
